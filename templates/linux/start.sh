@@ -18,6 +18,7 @@ set +e
 docker build -t meteorhacks/meteord:app - << EOF
 FROM meteorhacks/meteord:base
 RUN apt-get install graphicsmagick -y
+EOF
 set -e
 
 if [ "$USE_LOCAL_MONGO" == "1" ]; then
